@@ -230,13 +230,47 @@
   230  git commit -m "Correccion realizada sobre PuntoF.sh"
   231  git push
   232  cd ..
-  233  sudo vgdisplay vgAdmin
-  234  ls
-  235  sudo lvcreate -L 1.99G -n lvAdmin vgAdmin
-  236  sudo lvcreate -L 1G -n lvDevelopers vgDevelopers
-  237  sudo vgdisplay
-  238  sudo lvcreate -L 1G -n lvDevelopers vgDeveloper
-  239  sudo lvcreate -L 1G -n lvTesters vgDeveloper
-  240  sudo lvcreate -L 1G -n lvDevops vgDeveloper
-  241  cd 2doParcial/
-  242  history > punto_a.txt
+  233  ls
+  234  sudo lvcreate -L 1.99G -n lvAdmin vgAdmin
+  235  sudo lvcreate -L 1G -n lvDevelopers vgDevelopers
+  236  sudo vgdisplay
+  237  sudo lvcreate -L 1G -n lvDevelopers vgDeveloper
+  238  sudo lvcreate -L 1G -n lvTesters vgDeveloper
+  239  sudo lvcreate -L 1G -n lvDevops vgDeveloper
+  240  cd 2doParcial/
+  241  history > punto_a.txt
+  242  sudo mkswap /dev/sdc1
+  243  sudo swapon /dev/sdc1
+  244  free -h
+  245  sudo mkfs.ext4 /dev/vgAdmin
+  246  cd ..
+  247  sudo mkfs.ext4 /dev/vgAdmin
+  248  sudo vgdisplay
+  249  lsblk
+  250  sudo fdisk -l /dev/sdc3/vgAdmin
+  251  sudo fdisk -l /dev/sdc3
+  252  sudo mkfs.ext4 /dev/cd ..
+  253  cd..
+  254  cd ..
+  255  ls
+  256  cd dev
+  257  ls
+  258  cd sdc3
+  259  cd sdc
+  260  ls
+  261  cat sdc2
+  262  sudo cat sdc3
+  263  sudo vgdisplay
+  264  sudo lvdisplay
+  265  sudo mkfs.ext4 /dev/vgAdmin/lvAdmin
+  266  sudo mkfs.ext4 /dev/vgDeveloper/lvDeveloper
+  267  sudo mkfs.ext4 /dev/vgDeveloper/lvDevelopers
+  268  sudo mkfs.ext4 /dev/vgDeveloper/lvTesters
+  269  sudo mkfs.ext4 /dev/vgDeveloper/lvDevops
+  270  sudo lvdisplay
+  271  sudo lvcreate -L 1G -n lvDevops vgDevelopers
+  272  sudo lvcreate -L 1G -n lvDevops vgDeveloper
+  273  sudo lvcreate -L 0.99G -n lvDevops vgDeveloper
+  274  sudo mkfs.ext4 /dev/vgDeveloper/lvDevops
+  275  cd 2doParcial/
+  276  history > punto_a2.txt
