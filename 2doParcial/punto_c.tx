@@ -1,0 +1,382 @@
+    1  rm -r AySO-Parcial1-LucasFerrini
+    2  y
+    3  ls
+    4  git clone git@github.com:LMFT/AySO-Parcial1-LucasFerrini.git
+    5  sudo git clone git@github.com:LMFT/AySO-Parcial1-LucasFerrini.git
+    6  ls
+    7  cat GitHubVM
+    8  sudo git clone git@github.com:LMFT/AySO-Parcial1-LucasFerrini.git
+    9  git clone git@github.com:LMFT/AySO-Parcial1-LucasFerrini.git
+   10  cd .ssh
+   11  cd ..
+   12  ls
+   13  rm -r GitHubVM
+   14  rm -r GitHubVM.pub
+   15  ls
+   16  cd .ssh
+   17  ssh-keygen -t ed25519 -C "lucasferrini93@hotmail.com"
+   18  ls
+   19  cat GitHub_parcial1
+   20  cat GitHub_parcial1.pub
+   21  cd ..
+   22  git clone git@github.com:LMFT/AySO-Parcial1-LucasFerrini.git
+   23  cd .ssh
+   24  ls
+   25  cd known_hosts
+   26  cat known_hosts
+   27  rm -r known_hosts
+   28  ls
+   29  cd ..
+   30  git clone git@github.com:LMFT/AySO-Parcial1-LucasFerrini.git
+   31  ssh _T git@github.com
+   32  ssh -T git@github.com
+   33  cd .ssh
+   34  rm -r known_hosts
+   35  ssh -T git@github.com
+   36  ls
+   37  tree
+   38  ssh-add ~/.ssh/GitHub_parcial1
+   39  eval "(ssh-agent -s)"
+   40  ssh-add ~/.ssh/GitHub_parcial1
+   41  cd ..
+   42  ls
+   43  mkdir parcial_1
+   44  cd parcial_1
+   45  touch PuntoA.sh PuntoB.sh PuntoC.sh PuntoD.sh PuntoE.sh PuntoF.sh
+   46  mkdir -p Examenes-Utn/{profesores,alumno_{1.3}/parcial_1{1..3}}
+   47  tree
+   48  rm -r Examenes-Utn
+   49  mkdir -p Examenes-Utn/{profesores,alumno_{1..3}/parcial_{1..3}}
+   50  tree
+   51  vim PuntoA.sh
+   52  cat PuntoA.sh
+   53  sudo fdisk /dev/sdc4
+   54  sudo fdisk -p
+   55  sudo fdisk p
+   56  ls dev
+   57  ls /dev
+   58  lsblk
+   59  sudo fdisk -n -p
+   60  sudo fdisk /dev/sda
+   61  sudo fdisk /dev/sdc
+   62  ls dev
+   63  les /dev
+   64  ls /dev
+   65  sudo mkfs .ext4 /dev/sdc1
+   66  sudo mkfs /dev/sdc1 .ext4
+   67  sudo mkfs.ext4 /dev/sdc1
+   68  sudo mkfs.ext4 /dev/sdc2
+   69  sudo mkfs.ext4 /dev/sdc3
+   70  sudo mkfs.ext4 /dev/sdc4
+   71  cd ..
+   72  cd mnt
+   73  mkdir /mnt/sdc1
+   74  sudo mkdir /mnt/sdc1
+   75  sudo mount /dev/sdc1 /mnt/sdc1
+   76  lsblk -f /dev/sdc
+   77  sudo mkdir /mnt/sdc2
+   78  sudo mkdir /mnt/sdc3
+   79  sudo mkdir /mnt/sdc4
+   80  sudo mount /dev/sdc2 /mnt/sdc2
+   81  sudo mount /dev/sdc3 /mnt/sdc3
+   82  sudo mount /dev/sdc4 /mnt/sdc4
+   83  lsblk -f /dev/sdc
+   84  sudo mkfs.ext4 /dev/sdc4
+   85  lsblk -f /dev/sdc
+   86  ls
+   87  cd parcial_1
+   88  lsblk -f /dev/sdc > PuntoB.sh
+   89  cat PuntoB.sh
+   90  sudo useradd developer
+   91  cat /etc/passwd
+   92  sudo groupadd grupoDevs
+   93  cat /etc/groups
+   94  cat /etc/group
+   95  id developer
+   96  sudo deluser grupodevs
+   97  sudo deluser grupoDevs
+   98  sudo groupremove grupoDevs
+   99  sudo delgroup grupoDevs
+  100  sudo groupadd grupoDevops
+  101  cat /etc/group
+  102  id developer
+  103  usermod --help
+  104  sudo usermod -aG grupoDevops developer
+  105  sudo useradd tester
+  106  sudo groupadd grupoDiseño
+  107  sudo usermod -aG grupoDiseño tester
+  108  id tester
+  109  sudo useradd devops
+  110  sudo groupadd grupoDevelope
+  111  sudo usermod -aG grupoDevelopre devops
+  112  sudo usermod -aG grupoDeveloper devops
+  113  sudo useradd diseñador
+  114  chmod
+  115  sudo chmod
+  116  sudo chmod --help
+  117  sudo chmod 750 Examenes-Utn/alumno_1
+  118  sudo chmod 760 Examenes-Utn/alumno_2
+  119  sudo chmod 700 Examenes-Utn/alumno_3
+  120  sudo chmod 775 Examenes-Utn/profesores
+  121  cd Examenes-Utn
+  122  ls
+  123  ll
+  124  cd alumno_1
+  125  whoami
+  126  whoami > validar.txt
+  127  ls
+  128  cat validar.txt
+  129  sudo -R chmod 750 Examenes-Utn/alumno_1
+  130  sudo -R chmod 750 Examenes-Utn/alumno_1
+  131  ls
+  132  ll
+  133  cd Examenes-Utn
+  134  ll
+  135  whoami > $HOME
+  136  whoami > $HOME/validar.txt
+  137  ls $HOME
+  138  cd alumno_2
+  139  whoami > validar.txt
+  140  cd ..
+  141  cd alumno_3
+  142  whoami > validar.txt
+  143  cd ..
+  144  cd profesores
+  145  whoami > validar.txt
+  146  cd ..
+  147  ls
+  148  history > PuntoC.sh
+  149  cat PuntoC.sh 
+  150  history -n60 > PuntoC.sh 
+  151  vim PuntoC.sh 
+  152  history  > PuntoC.sh 
+  153  vim PuntoC.sh 
+  154  mkdir -p Estructura_Asimetrica/{{correo,cliente}/cartas_{1..100},correo/carteros_{1..10}}
+  155  tree Estructura_Asimetrica
+  156  history
+  157  vim PuntoB.sh
+  158  cat /proc/meminfo
+  159  grep /proc/meminfo MemTotal
+  160  grep MemTotal /proc/meminfo
+  161  grep MemTotal /proc/meminfo > filtroBasico.txt
+  162  dmidecode -t chassis |grep Manufacturer >> filtroBasico.txt
+  163  sudo dmidecode -t chassis |grep Manufacturer >> filtroBasico.txt
+  164  cat filtroBasico.txt
+  165  history 20
+  166  vim PuntoD.sh
+  167  vim PuntoE.sh
+  168  cat filtroBasico.txt
+  169  curl -s ifconfig.me
+  170  touch filtroAvanzado.txt
+  171  cat << EOF
+  172  curl -s ifconfig.me
+  173  whoami
+  174  cat etc
+  175  EOF
+  176  cat filtroAvanzado.txt
+  177  rm -r filtroAvanzado.txt
+  178  ls
+  179  eval 'ssh-agent -5'
+  180  eval 'ssh-agent -s'
+  181  ssh-add /.ssh/id_ed25519
+  182  ssh-agent -s
+  183  ssh-agent
+  184  ssh-agent --help
+  185  sudo ssh-agent -s
+  186  sudo ssh-agent add id_ed25519
+  187  sudo ssh-add id_ed25519
+  188  cd .ssh
+  189  ll
+  190  cat authorized_keys
+  191  cd ..
+  192  ls
+  193  mkdir repogit
+  194  cd repogit
+  195  git init
+  196  touch sarasa.txt
+  197  ls
+  198  git add .
+  199  git status
+  200  git commit -m "Primer Commit"
+  201  git remote add origin https://github.com/LMFT/AySO-Parcial1-LucasFerrini
+  202  git push
+  203  git push --set-upstream origin master
+  204  cd ..
+  205  git clone https://github.com/LMFT/AySO-Parcial1-LucasFerrini
+  206  cd AySO-Parcial1-LucasFerrini/
+  207  ls
+  208  cd ..
+  209  cd parcial_1/
+  210  cp -r \$HOME/AySO-Parcial1-LucasFerrini/
+  211  cd $HOME
+  212  cp -r parcial_1 AySO-Parcial1-LucasFerrini/
+  213  tree AySO-Parcial1-LucasFerrini/
+  214  cd AySO-Parcial1-LucasFerrini/
+  215  git add .
+  216  git commit -m "Entrega final"
+  217  git status
+  218  git push
+  219  cd parcial_1/
+  220  cat filtroAvanzado.txt 
+  221  cat PuntoE.sh 
+  222  cat PuntoF.sh 
+  223  history
+  224  ll
+  225  cat filtroAvanzado.txt 
+  226  vim PuntoF.sh
+  227  cd ..
+  228  git add.
+  229  git add .
+  230  git commit -m "Correccion realizada sobre PuntoF.sh"
+  231  git push
+  232  cd ..
+  233  ls
+  234  sudo lvcreate -L 1.99G -n lvAdmin vgAdmin
+  235  sudo lvcreate -L 1G -n lvDevelopers vgDevelopers
+  236  sudo vgdisplay
+  237  sudo lvcreate -L 1G -n lvDevelopers vgDeveloper
+  238  sudo lvcreate -L 1G -n lvTesters vgDeveloper
+  239  sudo lvcreate -L 1G -n lvDevops vgDeveloper
+  240  cd 2doParcial/
+  241  history > punto_a.txt
+  242  sudo mkswap /dev/sdc1
+  243  sudo swapon /dev/sdc1
+  244  free -h
+  245  sudo mkfs.ext4 /dev/vgAdmin
+  246  cd ..
+  247  sudo mkfs.ext4 /dev/vgAdmin
+  248  sudo vgdisplay
+  249  lsblk
+  250  sudo fdisk -l /dev/sdc3/vgAdmin
+  251  sudo fdisk -l /dev/sdc3
+  252  sudo mkfs.ext4 /dev/cd ..
+  253  cd..
+  254  cd ..
+  255  ls
+  256  cd dev
+  257  ls
+  258  cd sdc3
+  259  cd sdc
+  260  ls
+  261  cat sdc2
+  262  sudo cat sdc3
+  263  ssh vagrant@192.168.56.9
+  264  ls
+  265  cd etc
+  266  ls
+  267  cd ..
+  268  cd $HOME
+  269  ssh-copy-id vagrant@192.168.56.9
+  270  cd vagrant}
+  271  cd vagrant
+  272  ls
+  273  cd .
+  274  cd ..
+  275  ls
+  276  cd vagrant
+  277  cd .ssh
+  278  ls
+  279  cat authorized
+  280  cat authorized_keys 
+  281  ls
+  282  cat id_rsa.pub
+  283  ssh-copy-id vagrant@192.169.56.9
+  284  ssh-copy-id vagrant@192.168.56.9
+  285  ssh vagrant@192.168.56.9
+  286  ssh-keygen -f "/home/vagrant/.ssh/known_hosts" -R "192.168.56.9"
+  287  ssh vagrant@192.168.56.9
+  288  ansible desarrollo -m ping
+  289  cd etc/ansible
+  290  cd ./etc/ansible
+  291  ls
+  292  cd ..
+  293  cd /etc/ansible
+  294  ls
+  295  cat hosts
+  296  vim hosts
+  297  rm hosts
+  298  sudo rm hosts
+  299  ls
+  300  cd $HOME
+  301  sudo nano  /etc/ansible/hosts
+  302  ansible desarrollo -m ping
+  303  cd ../../etc/ansible
+  304  mikdir playbooks
+  305  mkdir playbooks
+  306  sudo mkdir playbooks
+  307  sudo rm -r playbooks/
+  308  sudo mkdir playbooks
+  309  cd playbooks/
+  310  nano install_apache.yml
+  311  sudo nano install_apache.yml
+  312  mobe install_apache.yml ../install_apache.yml
+  313  sudo move install_apache.yml ../install_apache.yml
+  314  cd ..
+  315  ls
+  316  cat hosts
+  317  sudo nano install_apache.yml
+  318  rm -r playbooks/
+  319  sudo rm -r playbooks/
+  320  ansible-playbook -i /etc/ansible/hosts install_apache.yml
+  321  cd $HOME
+  322  cd 2doParcial/
+  323  history > punto_b.txt
+  324  mkdir appHomeBanking
+  325  cd  appHomeBanking/
+  326  touch index.html
+  327  touch contacto.html
+  328  vim index.html 
+  329  vim contacto.html 
+  330  nano Dockerfile
+  331  docker build
+  332  docker build -t 2parcial-ayso:v1.0 .
+  333  docker images
+  334  docker run -d -p 8080:80 2parcial-ayso:v1.0
+  335  ls
+  336  ip a
+  337  docker login
+  338  docker tag 2parcial-ayso:v1.0 lmft/2parcial-ayso:v1.0
+  339  docker push lmft/2parcial-ayso:v1.0
+  340  cd ..
+  341  nano punto_c.sh
+  342  chmod +x punto_c.sh 
+  343  punto_c.sh
+  344  ./punto_c.sh 
+  345  nano punto_c.sh 
+  346  ./punto_c.sh 
+  347  sudo lsof
+  348  cd ..
+  349  git clone https://github.com/LMFT/AySO-2doParcial-LucasFerrini
+  350  AySO-2doParcial-LucasFerrini/cd ..
+  351  cd ..
+  352  ls
+  353  cd vagrant/
+  354  ls
+  355  mv 2doParcial ./AySO-2doParcial-LucasFerrini/
+  356  ls
+  357  cd AySO-2doParcial-LucasFerrini/
+  358  ls
+  359  git commit -m "Resolucion"
+  360  git add .
+  361  git commit -m "Resolucion"
+  362  git push
+  363  cd 2doParcial
+  364  ls
+  365  cd AySO-2doParcial-LucasFerrini/
+  366  ls
+  367  cd 2doParcial/
+  368  rm -r punto_a.txt
+  369  ls
+  370  rm -r historial.txt 
+  371  mv punto_a2.txt punto_a.txt
+  372  ls
+  373  xim punto_a.txt 
+  374  vim punto_a.txt 
+  375  cd AySO-2doParcial-LucasFerrini/
+  376  cd 2doParcial/
+  377  ls
+  378  cat punto_a.txt 
+  379  cd AySO-2doParcial-LucasFerrini/
+  380  cd 2doParcial/
+  381  mv punto_c.sh script_punto_c.txt
+  382  history > punto_c.tx
